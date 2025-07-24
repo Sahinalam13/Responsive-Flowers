@@ -26,6 +26,21 @@ body {
     font-family: Inter;
 }
 
+.btn-primary {
+    width: 100%;
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: rgba(191, 146, 120, 1);
+}
+
 
 /* nav start */
 .nav-container {
@@ -80,7 +95,7 @@ body {
     margin-bottom: 120px;
     display: flex;
     align-items: end;
-    font-family: Noto+Serif;
+    font-family: Noto Serif;
 }
 
 .banner-rigth-title {
@@ -110,9 +125,10 @@ body {
 
 
 .plant-title {
-    font-family: Noto+Serif;
+    font-family: Noto serif;
     font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .plant-card-parent {
@@ -145,23 +161,10 @@ body {
     color: rgba(17, 17, 17, 1);
 }
 
-.btn-primary {
-    width: 100%;
-    background-color: rgba(233, 90, 8, 1);
-    color: white;
-    font-weight: 600;
-    border: none;
-    padding: 10px;
-    margin-top: 30px;
-    transition: 0.5s;
-}
 
-.btn-primary:hover {
-    background-color: rgba(191, 146, 120, 1);
-}
 /* plant section end */
 /* plants lover section start */
-.plant-lover-section{
+.plant-lover-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +174,8 @@ body {
     margin-bottom: 130px;
     position: relative;
 }
-.challenge-badge img{
+
+.challenge-badge img {
     width: 286px;
     height: 286px;
     position: absolute;
@@ -179,6 +183,98 @@ body {
     right: 500px;
     display: block;
 }
+
+/* plants lover section end */
+/* latest deals section start */
+.letest-deal-content {
+    margin-bottom: 125px;
+}
+
+.latest-deal-challenges-part {
+    display: flex;
+
+    height: 423px;
+    gap: 28px;
+    margin-bottom: 120px;
+}
+
+.challenges-left {
+    width: 30%;
+
+}
+
+.challenges-left-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(../assets/deal-bloom.png);
+    height: 200px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: Noto Serif;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+
+
+}
+
+.challenges-left-1,
+.challenges-left-2 span {
+    text-decoration: underline;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.challenges-left-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(../assets/deal-ana.png);
+    height: 200px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: Noto Serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.challenges-right {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.challenges-right-1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Noto Serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.challenges-right-1 span {
+    text-decoration: underline;
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
 
 
 
@@ -211,13 +307,27 @@ body {
         grid-template-columns: repeat(2, 1fr);
 
     }
-    .plant-lover-section{
+
+    .plant-lover-section {
         flex-direction: column;
     }
-    .challenge-badge img{
+
+    .challenge-badge img {
         display: none;
     }
+
+
+    .latest-deal-challenges-part {
+        flex-direction: column;
+    }
+
+    .challenges-right {
+        width: 30%;
+        
+    }
    
+
+
 
 
 
