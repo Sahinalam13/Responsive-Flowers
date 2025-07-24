@@ -305,6 +305,7 @@ main {
     background-image: linear-gradient(rgba(7, 51, 79, 0.4)), url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 530px;
     display: flex;
     justify-content: center;
@@ -564,5 +565,23 @@ main {
         margin-top: 12px;
         font-size: 20px;
     }
+
+    /* join section */
+
+    .join-section-container{
+        height: 276px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .join-section-content{
+        width: 321px  
+    }
+
+    .join-section-title {
+        font-size: 20px;
+    }
+
+    /* footer */
 
 }
