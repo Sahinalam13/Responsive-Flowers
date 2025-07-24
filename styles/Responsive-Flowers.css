@@ -11,6 +11,7 @@ body {
 
 }
 
+
 /* shared classes */
 .orange {
     color: rgba(233, 90, 8, 1);
@@ -273,6 +274,55 @@ body {
     font-family: Inter;
     font-size: 1.75rem;
     font-weight: 600;
+}
+/* latest deal end */
+/* join section */
+.join-section-container{
+    background-image:linear-gradient(rgba(7, 51, 79, 0.4)), url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.join-section-content{
+    width: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.join-section-title{
+    font-family: Noto Serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.join-section-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 830px;
+    /* border: 2px solid yellow; */
+    
+
+}
+.join-section-mail input{
+    flex: 1;
+    max-width: 644px;
+    height: 50px;
+    padding: 8px 20px;
+
+
+}
+.join-section-mail button{
+    width: 30%;
+    height: 50px;
+    margin-bottom: 30px;
 }
 
 
