@@ -1,16 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    width: 1140px;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin: 0px auto;
     background-color: rgb(245, 248, 255);
 
 }
 
+header {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+main {
+    max-width: 1140px;
+    margin: 0px auto;
+}
 
 /* shared classes */
 .orange {
@@ -29,6 +38,7 @@ body {
 
 .btn-primary {
     width: 100%;
+    height: 50px;
     background-color: rgba(233, 90, 8, 1);
     color: white;
     font-weight: 600;
@@ -53,10 +63,16 @@ body {
     height: 71px;
 }
 
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
 .nav_links {
     /* border: 1px solid rgb(219, 211, 211); */
     border-radius: 20px;
-    padding: 22px;
+    padding: 22px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,17 +116,17 @@ body {
     font-family: Noto Serif;
 }
 
-.banner-rigth-title {
+.banner-left-title {
     font-size: 4rem;
     font-weight: bold;
 
 }
 
-.banner-right-description {
-
+.banner-left-description {
     margin-top: 13px;
 
 }
+
 
 /* banner section end */
 /* <!-- plant section start from here --> */
@@ -186,6 +202,10 @@ body {
     display: block;
 }
 
+.test {
+    margin: 20px 0px;
+}
+
 /* plants lover section end */
 /* latest deals section start */
 .letest-deal-content {
@@ -223,7 +243,7 @@ body {
 
 }
 
-.challenges-left-1,
+.challenges-left-1 span,
 .challenges-left-2 span {
     text-decoration: underline;
     font-family: Inter;
@@ -265,6 +285,8 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     font-family: Noto Serif;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -367,6 +389,9 @@ body {
 
 }
 
+.display {
+    display: none;
+}
 
 
 
@@ -375,52 +400,169 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+
+    /* shared */
+    .gray {
+        font-size: 14px;
+    }
+
+    /* navbar start */
     .nav-container {
-        width: 80%;
-        margin: 28px auto;
+        min-width: 361px;
+        height: 38px;
+        margin: 20px 16px;
+
+    }
+
+    .nav-logo img {
+        width: 63px;
+        background-size: cover;
     }
 
     .nav-a {
         display: none;
     }
 
+    /* navbar end */
+
+    /* Banner start */
     .banner-container {
-        flex-direction: column-reverse;
+        margin-top: 8px;
         margin-bottom: 65px;
+        width: 100%;
+        display: flex;
+        gap: 28px;
+        flex-direction: column-reverse;
     }
 
     .banner-left {
+        margin: 0px 16px;
+    }
+
+    .banner-left-title {
+        width: 250px;
+        font-size: 24px;
+    }
+
+    .banner-left-description {
+        font-size: 14px;
+    }
+
+    .banner-right {
+        width: 100%;
+        height: 245px;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    /* banner end */
+
+    .plant-container {
         margin-bottom: 28px;
+    }
+
+
+    .plant-title {
+        font-size: 24px;
+    }
+
+    .plant-description {
+        width: 336px;
+        text-align: center;
+
     }
 
     .plant-card-parent {
         grid-template-columns: repeat(2, 1fr);
-
+        margin: 0px 16px;
     }
 
+    .plant-card {
+        width: 171px;
+    }
+
+    .plant-card img {
+        width: 100%;
+        height: 196px;
+    }
+
+    .plant-card h3 {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .plant-card h4 {
+        font-size: 16px;
+    }
+
+    /* plant lover section start */
     .plant-lover-section {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 42px;
         flex-direction: column;
+        gap: 16px;
     }
 
-    .challenge-badge img {
-        display: none;
+    .plant-lover-left {
+        min-width: 358px;
     }
 
+    .plant-lover-left img {
+        width: 100%;
+    }
+
+    .test {
+        margin: 16px 16px 16px 24px;
+    }
+
+    /* plant lover end */
+
+    /* latest deal challages */
 
     .latest-deal-challenges-part {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .challenges-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .challenges-left-1,
+    .challenges-left-2 {
+        width: 361px;
+        height: 184px;
+
     }
 
     .challenges-right {
-        width: 30%;
-
+        width: 361px;
+        height: 184px;
     }
 
+    .challenges-right-1 {
+        height: 184px;
+    }
 
+    .challenges-right-1 p {
+        font-size: 20px;
+    }
 
-
-
-
+    .challenges-right-1 span {
+        margin-top: 12px;
+        font-size: 20px;
+    }
 
 }
