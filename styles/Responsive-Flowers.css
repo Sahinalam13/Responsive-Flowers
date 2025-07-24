@@ -36,6 +36,7 @@ body {
     padding: 10px;
     margin-top: 30px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -275,10 +276,11 @@ body {
     font-size: 1.75rem;
     font-weight: 600;
 }
+
 /* latest deal end */
 /* join section */
-.join-section-container{
-    background-image:linear-gradient(rgba(7, 51, 79, 0.4)), url(../assets/news-letter-bg.png);
+.join-section-container {
+    background-image: linear-gradient(rgba(7, 51, 79, 0.4)), url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 530px;
@@ -288,30 +290,34 @@ body {
 
 
 }
-.join-section-content{
+
+.join-section-content {
     width: 830px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.join-section-title{
+
+.join-section-title {
     font-family: Noto Serif;
     font-size: 3rem;
     font-weight: bold;
     color: white;
 }
-.join-section-mail{
+
+.join-section-mail {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 830px;
     /* border: 2px solid yellow; */
-    
+
 
 }
-.join-section-mail input{
+
+.join-section-mail input {
     flex: 1;
     max-width: 644px;
     height: 50px;
@@ -319,12 +325,47 @@ body {
 
 
 }
-.join-section-mail button{
+
+.join-section-mail button {
     width: 30%;
     height: 50px;
     margin-bottom: 30px;
 }
 
+/* join section end */
+/* footer */
+.footer {
+    height: 350px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+.footer a {
+    font-family: Inter;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(107, 114, 128, 1);
+}
+
+.footer-home-links,
+.footer-features-links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-icons {
+    width: 200px;
+    height: 36px;
+    display: flex;
+    gap: 24px;
+
+}
 
 
 
@@ -373,9 +414,9 @@ body {
 
     .challenges-right {
         width: 30%;
-        
+
     }
-   
+
 
 
 
