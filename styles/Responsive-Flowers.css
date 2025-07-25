@@ -199,6 +199,15 @@ header {
     margin-bottom: 130px;
     position: relative;
 }
+/* badge animation */
+@keyframes challenge-badge {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
 .challenge-badge img {
     width: 286px;
@@ -207,6 +216,7 @@ header {
     top: -120px;
     right: 500px;
     display: block;
+    animation: challenge-badge 10s linear infinite ;
 }
 
 .test {
@@ -344,9 +354,8 @@ header {
     align-items: center;
     width: 100%;
     max-width: 830px;
-    /* border: 2px solid yellow; */
 
-
+    
 }
 
 .join-section-mail input {
@@ -405,17 +414,8 @@ header {
 
 }
 
-.display {
-    display: none;
-}
 
-
-
-
-
-
-
-
+/* mobile responsive */
 @media screen and (max-width: 576px) {
 
     /* shared */
